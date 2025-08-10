@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Voting System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1><i class="fas fa-film"></i> Movie Voting System</h1>
+        <div class="header-actions">
+            <div class="totals">
+                <div class="total-box">
+                    <span class="total-icon"><i class="fas fa-thumbs-up"></i></span>
+                    <span id="total-likes">0</span>
+                </div>
+                <div class="total-box">
+                    <span class="total-icon"><i class="fas fa-thumbs-down"></i></span>
+                    <span id="total-dislikes">0</span>
+                </div>
+            </div>
+            <button class="add-movie-btn" id="open-modal"><i class="fas fa-plus"></i> Add Movie/Show</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="movie-list" id="movie-list">
+            <p class="no-movies">No movies available. Add the first one!</p>
+        </section>
+    </main>
+</div>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-modal">&times;</span>
+        <h2>Add New Movie/TV Show</h2>
+        <form id="movie-form">
+            <div class="form-group">
+                <label for="title">Title*</label>
+                <input type="text" id="title" placeholder="e.g. Inception" required>
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre*</label>
+                <input type="text" id="genre" placeholder="e.g. Sci-Fi" required>
+            </div>
+            <div class="form-group">
+                <label for="imageUrl">Image URL*</label>
+                <input type="text" id="imageUrl" placeholder="https://example.com/movie.jpg" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Plot summary..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Add Movie</button>
+        </form>
+    </div>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

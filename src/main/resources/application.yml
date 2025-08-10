@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: test
+  jpa:
+    open-in-view: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create
