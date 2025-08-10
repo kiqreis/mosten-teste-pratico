@@ -1,4 +1,4 @@
-# Movie Voting API 🎬
+# Movie Voting System 🎬
 
 API de votação de filmes e séries desenvolvido em Spring Boot, conforme teste prático do processo de formação.
 
@@ -78,6 +78,7 @@ Desenvolver um sistema que permita aos usuários votarem em uma lista de filmes 
 ### Pré-requisitos
 - Java 21
 - Docker e Docker Compose
+- Node 22
 - Maven 3.8+
 
 ### Passos
